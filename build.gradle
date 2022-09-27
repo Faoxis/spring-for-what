@@ -1,0 +1,32 @@
+plugins {
+//	id 'org.springframework.boot' version '2.7.4'
+//	id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server
+	implementation group: 'org.eclipse.jetty', name: 'jetty-server', version: '11.0.12'
+// https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlets
+	implementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '11.0.12'
+	// https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-util
+	implementation group: 'org.eclipse.jetty', name: 'jetty-util', version: '11.0.12'
+	implementation group: 'org.eclipse.jetty', name: 'jetty-io', version: '11.0.12'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.4'
+// https://mvnrepository.com/artifact/org.telegram/telegrambots
+	implementation group: 'org.telegram', name: 'telegrambots', version: '6.1.0'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
