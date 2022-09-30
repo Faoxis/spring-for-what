@@ -1,5 +1,6 @@
 package com.example.springforwhat.client;
 
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -7,6 +8,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+@Component
 public class TelegramBotClient {
     private final static String BOT_LOGIN = "MySuperMegaAmazingBot";
     private final static String BOT_TOKEN = "1926990429:AAHIKeXS5YKCDVw4wEDC9Zv4obOmyUWoiD4";

@@ -1,5 +1,8 @@
 package com.example.springforwhat.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class SendingJokeService {
     private final JokeService jokeService;
     private final TelegramService telegramService;
