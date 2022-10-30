@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="telegramService" class="com.example.springforwhat.TelegramService"/>
+    <bean id="telegramService" class="com.example.springforwhat.service.TelegramService"/>
 
 </beans>
